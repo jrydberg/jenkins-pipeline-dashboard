@@ -1,0 +1,61 @@
+body {
+    padding-top: 60px;
+}
+
+.dashboard:after {
+    content:'';
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    height:200px;
+    width: 100%;
+    background: linear-gradient(bottom, white, transparent); 
+    background:-o-linear-gradient(bottom, white, transparent);
+    background:-moz-linear-gradient(bottom, white, transparent); 
+    background:-ms-linear-gradient(bottom, white, rgba(0, 0, 0, 0)); 
+    background:-webkit-linear-gradient(bottom, white, transparent); 
+    background:-webkit-gradient(linear, left bottom, left top, from(white), to(transparent)); 
+    z-index: 999;
+}
+
+.pipeline-version {
+    position: relative;
+}
+
+.pipeline-version .timestamp {
+    position: absolute;
+    right: 0;
+}
+
+.pipeline-version .progress {
+    height: 64px;
+    clear: both;
+}
+
+.pipeline-version .progress .progress-bar {
+    box-sizing: border-box;
+    border-left: 1px solid #999;
+    border-right: 1px solid #eee;
+}
+
+.pipeline-version .progress span {
+    padding-top: 20px;
+    display: block;
+}
+
+.pipeline-version dt, .pipeline-version dd {
+    font-family: "Lucida Console", Monospace;
+}
+
+.pipeline-version .steps {
+}
+
+.pipeline-version .steps .step {
+    margin-bottom: 6px;
+    display: inline-block;
+    text-align: center;
+    color: #999;
+    overflow: hidden;
+    float: left;
+    text-overflow: ellipsis;
+}
